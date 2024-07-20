@@ -36,7 +36,7 @@ html {
     background-color: var(--black);
 }
 h1, h2, h3, h4, h5, h6, a, button {font-family: var(--title-font); font-weight: 800;}
-p {white-space: pre-wrap; font-family: var(--body-font);}
+p, b {white-space: pre-wrap; font-family: var(--body-font);}
 label {cursor: pointer;}
 a {
     text-decoration: none;
