@@ -35,12 +35,12 @@ html {
     scroll-behavior: smooth;
     background-color: var(--black);
 }
-h1, h2, h3, h4, h5, h6, a, button {font-family: var(--title-font); font-weight: 800;}
+h1, h2, h3, h4, h5, h6, button {font-family: var(--title-font); font-weight: 800;}
 p, b {white-space: pre-wrap; font-family: var(--body-font);}
 label {cursor: pointer;}
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--highlight);
 }
 button {
     padding: 1rem;
@@ -95,10 +95,11 @@ body {
 
 .navigation a {
     padding: 0.2rem 0.5rem; border-radius: 10rem;
-    font-size: large; font-weight: 700;
+    font-family: var(--title-font); font-size: large; font-weight: 700;
     transition: background-color var(--transition_time), font-size var(--transition_time);
 }
 #nav-top-menu a {
+    color: var(--white);
     text-align: center; align-self: center; width: 50%;
     &:not(.section-highlight):hover {background-color: var(--bg_dark);}
 }
@@ -128,7 +129,7 @@ body {
     position: sticky; top: 0; left: 0;
     box-sizing: border-box;
     width: 100%;
-
+    
     background-color: var(--black);
     
     :first-child {margin-top: 1rem;}
