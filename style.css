@@ -151,8 +151,9 @@ body {
     box-sizing: border-box; padding: 2rem calc((100% - var(--content_width))/2);
     color: var(--white); background-color: var(--black);
     p {font-family: var(--title-font);}
-    i {color: var(--white); font-size: xx-large;}
+    i {font-size: xx-large;}
     a, i {
+        color: var(--white);
         transition: color var(--transition_time);
         font-weight: 400;
         &:hover {color: var(--highlight);}
