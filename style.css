@@ -92,6 +92,7 @@ body {
     color: var(--black);
     * {row-gap: 1rem;}
 }
+.content a {font-family: var(--body-font); font-weight: 700;}
 
 .navigation a {
     padding: 0.2rem 0.5rem; border-radius: 10rem;
