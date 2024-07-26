@@ -3,13 +3,13 @@
         "year": 2024,
         "title": "BioGlimmer",
         "description": "Follow iGEM Stockholm on social media for more updates!",
-        "wiki": "",
-        "img": "images/igem_official_black.png",
-        "alt": "",
-        "card_color": "",
-        "text_color": "",
-        "wiki_bg_color": "",
-        "wiki_text_color": ""
+        "wiki": "https://2024.igem.wiki/stockholm",
+        "img": "images/project_logo_2024.png",
+        "alt": "BioGlimmer logo",
+        "card_color": "#ece1eb",
+        "text_color": "#336c87",
+        "wiki_bg_color": "#336c87",
+        "wiki_text_color": "#ece1eb"
     },
     {
         "year": 2023,
