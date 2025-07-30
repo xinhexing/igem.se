@@ -1,7 +1,21 @@
 [
     {
+        "year": 2025,
+        "title": "TBD",
+        "wiki": "",
+        "img": "",
+        "alt": "",
+        "card_color": "#ffffff",
+        "text_color": "#000000",
+        "wiki_bg_color": "#000000",
+        "wiki_text_color": "#ffffff"
+    },
+    {
         "year": 2024,
         "title": "BioGlimmer",
+        "description": "Guanine crystal production in E. coli",
+        "members": ["Felix Falk", "Dimitros Tsagkogiannis", "Aleksandras Gaudiesius", "Jiaxin Wu", "Mai Nguyen", "Carmen de Ancos Jimeno", "Maria Gustavsson", "Meghana Bhat", "Juliana Baranova", "Diandra Daumiller", "Hongge Wang", "Edna Lam", "Teodora Pavlicu"],
+        "awards": ["Gold medal"],
         "wiki": "https://2024.igem.wiki/stockholm",
         "img": "images/project_logo_2024.png",
         "alt": "BioGlimmer logo",
