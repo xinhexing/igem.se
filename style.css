@@ -6,7 +6,7 @@
     --highlight: #8480f5;
     --bg_light: #f0f0f0;
     --bg_dark: #363636;
-    
+
     --black: #000000;
     --white: #ffffff;   
     
@@ -159,10 +159,8 @@ body {
 
 #igem-logo {max-width: 20rem;}
 
-#team-logos {
-    align-items: center; justify-content: center;
-    gap: 1.5rem;
-    img {max-width: 5rem; max-height: 5rem;}
+.team-logo-img {
+    height: 6rem;
 }
 
 .countdown {

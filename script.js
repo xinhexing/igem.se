@@ -143,28 +143,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Team logo
             if ('team_logo_img' in teamDict) {
-                const divTeamLogo = document.createElement('div');
-                divTeamLogo.className = 'carousel-cell';
-                divTeamLogoCarousel.appendChild(divTeamLogo);
                 const teamLogoImg = document.createElement('img');
+                teamLogoImg.className = 'team-logo-img';
                 teamLogoImg.src = teamDict.team_logo_img || '';
                 teamLogoImg.alt = teamDict.project_logo_alt || 'iGEM Stockholm ' + teamDict.year + ' logo';
-                divTeamLogo.appendChild(teamLogoImg);
+                divTeamLogoCarousel.appendChild(teamLogoImg);
             }
-            
         }); 
 
-        const flkty = new Flickity(divGalleryCarousel, {
+        new Flickity(divGalleryCarousel, {
             wrapAround: true,
             autoPlay: true,
         });
         
-        const flkty2 = new Flickity(divTeamLogoCarousel, {
+        new Flickity(divTeamLogoCarousel, {
             fade: true,
+            autoPlay: 1000,
             prevNextButtons: false,
             pageDots: false,
-            wrapAround: true,
-            autoPlay: 1000,
+            draggable: false,
         });
     }
 
