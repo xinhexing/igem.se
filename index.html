@@ -4,17 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
   <title>iGEM Stockholm</title>
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/8068b40d82.js" crossorigin="anonymous"></script>
   
+  <!-- Flickity -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity-fade@2/flickity-fade.css">
+  <script src="https://unpkg.com/flickity-fade@2/flickity-fade.js"></script>
   
   <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -38,8 +42,8 @@
   
   <div class="main row wrap">
     
-    <div class="carousel js-flickity"
-      data-flickity-options='{"wrapAround": true, "autoPlay": true}'>
+    <div class="carousel"
+      data-flickity='{"wrapAround": true, "autoPlay": true}'>
 
       <div class="carousel-cell">
         <a href="#teams"></a>
@@ -190,8 +194,7 @@
       <div id="gallery" class="section">
         <h1>Gallery</h1>
         
-        <div class="carousel js-flickity"
-        data-flickity-options='{"wrapAround": true, "autoPlay": true}'>
+        <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
           
           <div class="carousel-cell">
             <img src="images/team_2015.jpg" alt="">
