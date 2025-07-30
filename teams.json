@@ -2,13 +2,9 @@
     {
         "year": 2025,
         "title": "TBD",
-        "wiki": "",
-        "img": "",
-        "alt": "",
+        "project_logo_img": "",
         "card_color": "#ffffff",
-        "text_color": "#000000",
-        "wiki_bg_color": "#000000",
-        "wiki_text_color": "#ffffff"
+        "text_color": "#000000"
     },
     {
         "year": 2024,
@@ -17,12 +13,12 @@
         "members": ["Felix Falk", "Dimitros Tsagkogiannis", "Aleksandras Gaudiesius", "Jiaxin Wu", "Mai Nguyen", "Carmen de Ancos Jimeno", "Maria Gustavsson", "Meghana Bhat", "Juliana Baranova", "Diandra Daumiller", "Hongge Wang", "Edna Lam", "Teodora Pavlicu"],
         "awards": ["Gold medal"],
         "wiki": "https://2024.igem.wiki/stockholm",
-        "img": "images/project_logo_2024.png",
-        "alt": "BioGlimmer logo",
+        "project_logo_img": "images/project_logo_2024.png",
         "card_color": "#ece1eb",
         "text_color": "#336c87",
         "wiki_bg_color": "#336c87",
-        "wiki_text_color": "#ece1eb"
+        "wiki_text_color": "#ece1eb",
+        "team_img": "images/team_2024.jpg"
     },
     {
         "year": 2023,
@@ -31,12 +27,13 @@
         "members": ["Ellen Shute", "Tanvi Garg", "Alice Engbrink", "Ana Varas Sánchez", "Andrea Villanueva Raisman", "Christel Gradin", "Divya Harihar", "Eda Erbil", "Emilia Eliasson", "Farouk Ghanem", "Hanna Tamas", "Harini Panchapakesan", "Jia Ham", "Maria Lung", "Pooravi Gupta", "Sonja Klose", "Ulysse Castet"],
         "awards": ["Gold medal"],
         "wiki": "https://2023.igem.wiki/stockholm/",
-        "img": "images/project_logo_2023_white.png",
-        "alt": "LuciPEP logo",
+        "project_logo_img": "images/project_logo_2023_white.png",
         "card_color": "#202c34",
         "text_color": "#e8d4a4",
         "wiki_bg_color": "#e8d4a4",
-        "wiki_text_color": "#202c34"
+        "wiki_text_color": "#202c34",
+        "team_img": "images/team_2023.jpg",
+        "team_logo_img": "images/team_logo_2023.png"
     },
     {
         "year": 2022,
@@ -46,12 +43,13 @@
         "awards": ["Silver medal"],
         "nominations": ["Inclusivity Award"],
         "wiki": "https://2022.igem.wiki/stockholm/",
-        "img": "images/project_logo_2022.png",
-        "alt": "BiG-IF logo",
+        "project_logo_img": "images/project_logo_2022.png",
         "card_color": "#000000",
         "text_color": "#ffffff",
         "wiki_bg_color": "#e94949",
-        "wiki_text_color": ""
+        "wiki_text_color": "",
+        "team_img": "images/team_2022.jpg",
+        "team_logo_img": "images/team_logo_2022.png"
     },
     {
         "year": 2021,
@@ -60,12 +58,13 @@
         "members": ["Elsa Arksand", "Intisar Salim", "Viraj Phatarphod", "Nadine Gelmar", "Simon Jernselius", "Tereza Viskova", "Shivani Jambur", "Christina Bekiari", "Arthur Herren", "Maria Calvo Noriega", "Joël Tekoniemi", "Ifigeneia Nikolakopoulou", "Srijani Saha", "Carolin Brombach", "Lovisa Björck", "Silvija Lialkaite", "Ilva Noa Stellingwerf"],
         "awards": ["Gold medal"],
         "wiki": "https://2021.igem.org/Team:Stockholm",
-        "img": "images/project_logo_2021.png",
-        "alt": "MIKROSKIN logo",
+        "project_logo_img": "images/project_logo_2021.png",
         "card_color": "#f1dbcc",
         "text_color": "#573814",
         "wiki_bg_color": "#573814",
-        "wiki_text_color": "#f1dbcc"
+        "wiki_text_color": "#f1dbcc",
+        "team_img": "images/team_2021.jpg",
+        "team_logo_img": "images/team_logo_2021.png"
     },
     {
         "year": 2020,
@@ -75,12 +74,13 @@
         "awards": ["Gold medal"],
         "nominations": ["Best Environment Project", "Best New Composite Part"],
         "wiki": "https://2020.igem.org/Team:Stockholm",
-        "img": "images/project_logo_2020.png",
-        "alt": "S-POP logo",
+        "project_logo_img": "images/project_logo_2020.png",
         "card_color": "",
         "text_color": "#000000",
         "wiki_bg_color": "#d63b46",
-        "wiki_text_color": "#000000"
+        "wiki_text_color": "#000000",
+        "team_img": "images/team_2020.jpg",
+        "team_logo_img": "images/team_logo_2020.png"
     },
     {
         "year": 2019,
@@ -90,12 +90,13 @@
         "awards": ["Silver medal"],
         "nominations": ["Best Poster"],
         "wiki": "https://2019.igem.org/Team:Stockholm",
-        "img": "images/project_logo_2019.png",
-        "alt": "Esther logo",
+        "project_logo_img": "images/project_logo_2019.png",
         "card_color": "#1c2342",
         "text_color": "#eebad9",
         "wiki_bg_color": "#eebad9",
-        "wiki_text_color": "#1c2342"
+        "wiki_text_color": "#1c2342",
+        "team_img": "images/team_2019.jpg",
+        "team_logo_img": "images/team_logo_2019.png"
     },
     {
         "year": 2018,
@@ -105,12 +106,13 @@
         "awards": ["Gold medal", "Best Environment Project", "Best Integrated Human Practices"],
         "nominations": ["Best Presentation", "Best Entrepreneurship", "Best Product Design", "Best Model", "Best Education and Public Engagement"],
         "wiki": "https://2018.igem.org/Team:Stockholm",
-        "img": "images/project_logo_2018_blue.png",
-        "alt": "Biotic Blue logo",
+        "project_logo_img": "images/project_logo_2018_blue.png",
         "card_color": "",
         "text_color": "#274596",
         "wiki_bg_color": "#009ee2",
-        "wiki_text_color": ""
+        "wiki_text_color": "",
+        "team_img": "images/team_2018.jpg",
+        "team_logo_img": "images/team_logo_2018.png"
     },
     {
         "year": 2017,
@@ -120,12 +122,13 @@
         "awards": ["Gold medal"],
         "nominations": ["Best Entrepreneurship"],
         "wiki": "https://2017.igem.org/Team:Stockholm",
-        "img": "images/project_logo_2017.png",
-        "alt": "PROlung logo",
+        "project_logo_img": "images/project_logo_2017.png",
         "card_color": "#ec6c6a",
         "text_color": "#ffffff",
         "wiki_bg_color": "#ffffff",
-        "wiki_text_color": "#58bbea"
+        "wiki_text_color": "#58bbea",
+        "team_img": "images/team_2017.jpg",
+        "team_logo_img": "images/team_logo_2017.png"
     },
     {
         "year": 2016,
@@ -135,12 +138,12 @@
         "awards": ["Gold medal"],
         "nominations": ["Best Education and Public Engagement", "Best Presentation"],
         "wiki": "https://2016.igem.org/Team:Stockholm",
-        "img": "images/igem_official_black_full.png",
-        "alt": "SMITe logo",
         "card_color": "",
         "text_color": "",
         "wiki_bg_color": "#adadad",
-        "wiki_text_color": ""
+        "wiki_text_color": "",
+        "team_img": "images/team_2016.jpg",
+        "team_logo_img": "images/team_logo_2016.png"
     },
     {
         "year": 2015,
@@ -148,13 +151,13 @@
         "description": "A transferable, biological detection system for different diseases",
         "members": ["Felix Richter", "Katrine Horne Iversen", "Naz Karadağ", "Utsa Karmakar", "Radosław Góra", "Carmen Gallo Álvarez", "Manon Ricard", "Linnea Österberg", "Maximilian Karlander", "Pontus Höjer", "Hugo Tello", "Hugi Ásgeirsson", "Shea Baxley", "Sarah Wideman", "Denise Strand", "Karol Kugiejko", "Mona Hassan"],
         "awards": ["Gold medal"],
-        "nominations": ["Best Health and Medicine Project"],
+        "nominations": ["Best Heproject_logo_alth and Medicine Project"],
         "wiki": "https://2015.igem.org/Team:Stockholm",
-        "img": "images/igem_official_black_full.png",
-        "alt": "ABBBA logo",
         "card_color": "#639b9a",
         "text_color": "#000000",
         "wiki_bg_color": "#dd9f3b",
-        "wiki_text_color": ""
+        "wiki_text_color": "",
+        "team_img": "images/team_2015.jpg",
+        "team_logo_img": "images/team_logo_2015.png"
     }
 ]

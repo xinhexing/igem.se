@@ -4,9 +4,6 @@ window.addEventListener('load', () => {
     window.scrollTo(0, 0);
 });
 
-
-// Create team cards
-
 document.addEventListener('DOMContentLoaded', function() {
 
     function loadJSON(url, callback) {
@@ -16,20 +13,23 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error loading JSON:', error));
     }
 
-    function createElementsFromData(data) {
+    function createElementsFromTeamData(data) {
+
+        const divCurrentTeamCard = document.getElementById('current-team-card');
+        const divPastTeamCards = document.getElementById('past-team-cards');
+        const divGalleryCarousel = document.getElementById('gallery-carousel');
+        const divTeamLogoCarousel = document.getElementById('team-logo-carousel');
+
         data.forEach(function(teamDict, index) {
             
             // Team card
             const divCard = document.createElement('div');
             divCard.id = teamDict.year;
             divCard.className = 'team-card';
-            if ('card_color' in teamDict) {divCard.style.backgroundColor = teamDict.card_color}
-            if ('text_color' in teamDict) {divCard.style.color = teamDict.text_color}
-            if (index == 0) {
-                document.getElementById('current-team-card').appendChild(divCard);
-            } else {
-                document.getElementById('past-team-cards').appendChild(divCard);
-            }
+            divCard.style.backgroundColor = teamDict.card_color || '#ffffff';
+            divCard.style.color = teamDict.text_color || '#000000';
+            if (index == 0) {divCurrentTeamCard.appendChild(divCard);
+            } else {divPastTeamCards.appendChild(divCard);}
             
             const divTop = document.createElement('div');
             divTop.className = 'row center';
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const logoImg = document.createElement('img')
             logoImg.id = 'logo';
             logoImg.className = 'center';
-            logoImg.src = teamDict.img;
-            logoImg.alt = teamDict.alt;
+            logoImg.src = teamDict.project_logo_img || 'images/igem_official_black_full.png';
+            logoImg.alt = teamDict.title + ' logo';
             divTop.appendChild(logoImg);
             
             const divTopRight = document.createElement('div');
@@ -50,20 +50,20 @@ document.addEventListener('DOMContentLoaded', function() {
             // Title
             const title = document.createElement('h2')
             title.id = 'title';
-            title.textContent = teamDict.year + ": " + teamDict.title;
+            title.textContent = teamDict.year + ": " + teamDict.title || 'TBD';
             divTopRight.appendChild(title);
             
             // Wiki
             const wikiLink = document.createElement('a');
             wikiLink.id = 'wiki';
             wikiLink.className = 'center';
-            wikiLink.href = teamDict.wiki;
+            wikiLink.href = teamDict.wiki || '';
             wikiLink.target = '_blank';
             divTopRight.appendChild(wikiLink);
             const wikiButton = document.createElement('button');
             wikiButton.textContent = 'Wiki';
-            if ('wiki_bg_color' in teamDict) {wikiButton.style.backgroundColor = teamDict.wiki_bg_color}
-            if ('wiki_text_color' in teamDict) {wikiButton.style.color = teamDict.wiki_text_color}
+            wikiButton.style.backgroundColor = teamDict.wiki_bg_color || '#000000'
+            wikiButton.style.color = teamDict.wiki_text_color || '#ffffff';
             wikiLink.appendChild(wikiButton)
             
             // Description
@@ -125,10 +125,52 @@ document.addEventListener('DOMContentLoaded', function() {
                     divMembersList.appendChild(p)
                 });
             }
+
+            // Team image
+            if ('team_img' in teamDict) {
+                const divTeamImg = document.createElement('div');
+                divTeamImg.className = 'carousel-cell';
+                divGalleryCarousel.appendChild(divTeamImg);
+                const teamImg = document.createElement('img');
+                teamImg.src = teamDict.team_img || '';
+                teamImg.alt = 'iGEM Stockholm ' + teamDict.year + ' team image';
+                divTeamImg.appendChild(teamImg);
+                const caption = document.createElement('p');
+                caption.className = 'caption';
+                caption.textContent = 'iGEM Stockholm ' + teamDict.year;
+                divTeamImg.appendChild(caption);
+            }
+
+            // Team logo
+            if ('team_logo_img' in teamDict) {
+                const divTeamLogo = document.createElement('div');
+                divTeamLogo.className = 'carousel-cell';
+                divTeamLogoCarousel.appendChild(divTeamLogo);
+                const teamLogoImg = document.createElement('img');
+                teamLogoImg.src = teamDict.team_logo_img || '';
+                teamLogoImg.alt = teamDict.project_logo_alt || 'iGEM Stockholm ' + teamDict.year + ' logo';
+                divTeamLogo.appendChild(teamLogoImg);
+            }
+            
+        }); 
+
+        const flkty = new Flickity(divGalleryCarousel, {
+            wrapAround: true,
+            autoPlay: true,
+        });
+        
+        const flkty2 = new Flickity(divTeamLogoCarousel, {
+            fade: true,
+            prevNextButtons: false,
+            pageDots: false,
+            wrapAround: true,
+            autoPlay: 1000,
         });
     }
 
-    loadJSON('teams.json', createElementsFromData);
+    loadJSON('teams.json', createElementsFromTeamData);
+
+
 });
 
 
