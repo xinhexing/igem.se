@@ -1,7 +1,7 @@
 [
     {
         "year": 2025,
-        "title": "TBD",
+        "title": "SyntheScent",
         "project_logo_img": "",
         "card_color": "#ffffff",
         "text_color": "#000000"
@@ -47,7 +47,7 @@
         "card_color": "#000000",
         "text_color": "#ffffff",
         "wiki_bg_color": "#e94949",
-        "wiki_text_color": "",
+        "wiki_text_color": "#ffffff",
         "team_img": "images/team_2022.jpg",
         "team_logo_img": "images/team_logo_2022.png"
     },
@@ -75,7 +75,7 @@
         "nominations": ["Best Environment Project", "Best New Composite Part"],
         "wiki": "https://2020.igem.org/Team:Stockholm",
         "project_logo_img": "images/project_logo_2020.png",
-        "card_color": "",
+        "card_color": "#ffffff",
         "text_color": "#000000",
         "wiki_bg_color": "#d63b46",
         "wiki_text_color": "#000000",
@@ -107,10 +107,10 @@
         "nominations": ["Best Presentation", "Best Entrepreneurship", "Best Product Design", "Best Model", "Best Education and Public Engagement"],
         "wiki": "https://2018.igem.org/Team:Stockholm",
         "project_logo_img": "images/project_logo_2018_blue.png",
-        "card_color": "",
+        "card_color": "#ffffff",
         "text_color": "#274596",
         "wiki_bg_color": "#009ee2",
-        "wiki_text_color": "",
+        "wiki_text_color": "#ffffff",
         "team_img": "images/team_2018.jpg",
         "team_logo_img": "images/team_logo_2018.png"
     },
@@ -138,10 +138,10 @@
         "awards": ["Gold medal"],
         "nominations": ["Best Education and Public Engagement", "Best Presentation"],
         "wiki": "https://2016.igem.org/Team:Stockholm",
-        "card_color": "",
-        "text_color": "",
+        "card_color": "#ffffff",
+        "text_color": "#000000",
         "wiki_bg_color": "#adadad",
-        "wiki_text_color": "",
+        "wiki_text_color": "#ffffff",
         "team_img": "images/team_2016.jpg",
         "team_logo_img": "images/team_logo_2016.png"
     },
@@ -156,7 +156,7 @@
         "card_color": "#639b9a",
         "text_color": "#000000",
         "wiki_bg_color": "#dd9f3b",
-        "wiki_text_color": "",
+        "wiki_text_color": "#ffffff",
         "team_img": "images/team_2015.jpg",
         "team_logo_img": "images/team_logo_2015.png"
     }
