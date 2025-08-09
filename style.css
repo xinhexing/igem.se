@@ -222,10 +222,13 @@ body {
 }
 .carousel-cell {
     width: 80%; height: 100%;
+    padding: 0 1rem;
     align-items: center; justify-content: center;
     /* margin-right: 1rem; */ /*? Gap between cells */
+    background-color: var(--bg_light);
 
-    .background {position: absolute; z-index: -1;}
+    &.highlight {background-color: var(--highlight); color: var(--white);}
+
     .caption {
         position: absolute; bottom: 1rem;
         padding: 0.5rem 1rem;
@@ -238,6 +241,7 @@ body {
 
 #team-logo-carousel {
     max-height: 10rem;
+    .carousel-cell {background-color: transparent;}
     img {object-fit: contain; max-width: 10rem;}
 }   
 
