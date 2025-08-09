@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 divTeamImg.className = 'carousel-cell';
                 divGalleryCarousel.appendChild(divTeamImg);
                 const teamImg = document.createElement('img');
-                teamImg.src = teamDict.team_img || '';
+                teamImg.src = teamDict.team_img;
                 teamImg.alt = 'iGEM Stockholm ' + teamDict.year + ' team image';
                 divTeamImg.appendChild(teamImg);
                 const caption = document.createElement('p');
@@ -143,11 +143,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Team logo
             if ('team_logo_img' in teamDict) {
+                const divTeamLogo = document.createElement('div');
+                divTeamLogo.className = 'carousel-cell';
+                divTeamLogoCarousel.appendChild(divTeamLogo);
                 const teamLogoImg = document.createElement('img');
-                teamLogoImg.className = 'team-logo-img';
-                teamLogoImg.src = teamDict.team_logo_img || '';
-                teamLogoImg.alt = teamDict.project_logo_alt || 'iGEM Stockholm ' + teamDict.year + ' logo';
-                divTeamLogoCarousel.appendChild(teamLogoImg);
+                teamLogoImg.src = teamDict.team_logo_img;
+                teamLogoImg.alt = 'iGEM Stockholm ' + teamDict.year + ' logo';
+                divTeamLogo.appendChild(teamLogoImg);
             }
         }); 
 
