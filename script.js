@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         new Flickity(divTeamLogoCarousel, {
             fade: true,
-            autoPlay: 1000,
+            autoPlay: 2000,
             prevNextButtons: false,
             pageDots: false,
             draggable: false,
