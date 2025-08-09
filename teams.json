@@ -2,9 +2,11 @@
     {
         "year": 2025,
         "title": "SyntheScent",
-        "project_logo_img": "",
-        "card_color": "#ffffff",
-        "text_color": "#000000"
+        "project_logo_img": "images/project_logo_2025.png",
+        "card_color": "#fae7d9",
+        "text_color": "#000000",
+        "wiki_bg_color": "#4a2f1c",
+        "wiki_text_color": "#fae7d9"
     },
     {
         "year": 2024,
