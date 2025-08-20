@@ -15,17 +15,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createElementsFromTeamData(data) {
 
-        const divCurrentTeamCard = document.getElementById('current-team-card');
-        const divPastTeamCards = document.getElementById('past-team-cards');
+        const divCurrentTeamCard = document.getElementById('current-project-card');
+        const divPastTeamCards = document.getElementById('past-project-cards');
         const divGalleryCarousel = document.getElementById('gallery-carousel');
         const divTeamLogoCarousel = document.getElementById('team-logo-carousel');
 
         data.forEach(function(teamDict, index) {
             
-            // Team card
+            // Project card
             const divCard = document.createElement('div');
             divCard.id = teamDict.year;
-            divCard.className = 'team-card';
+            divCard.className = 'project-card';
             divCard.style.backgroundColor = teamDict.card_color || '#ffffff';
             divCard.style.color = teamDict.text_color || '#000000';
             if (index == 0) {divCurrentTeamCard.appendChild(divCard);

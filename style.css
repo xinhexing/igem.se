@@ -183,15 +183,15 @@ body {
     i {font-size: 5rem; color: var(--highlight);}
 }
 
-#teams-label {
+#projects-label {
     display: flex; gap: 0.5rem; align-items: center;
     i {
         font-size: x-large;
         &::before {content: '\f078';}
     }
 }
-#teams-checkbox:checked + #teams-label i::before {content: '\f077';}
-.team-card {
+#projects-checkbox:checked + #projects-label i::before {content: '\f077';}
+.project-card {
     align-self: center;
     padding: 1rem; gap: 1.5rem;
     border-radius: 1rem;
@@ -254,7 +254,7 @@ body {
 
 @media only screen and (max-width: 700px) {
     #nav-side {display: none;}
-    .team-card * {text-align: center; align-self: center;}
+    .project-card * {text-align: center; align-self: center;}
 }
 
 
