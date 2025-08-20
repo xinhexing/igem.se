@@ -3,7 +3,7 @@
 :root {
     /* Colors */
 
-    --highlight: #8480f5;
+    --highlight: #b1876e;
     --bg_light: #f0f0f0;
     --bg_dark: #363636;
 
@@ -58,7 +58,7 @@ button {
 .row {flex-direction: row;}
 .wrap {flex-wrap: wrap;}
 .hide {display: none;}
-
+b.highlight {color: var(--highlight);}
 
 /* Sections */
 
@@ -213,7 +213,6 @@ body {
         div {column-gap: 1rem;}
     }
 }
-#current-team-card > div {border: 10px solid var(--highlight);}
 
 .carousel {
     width: 100%;
