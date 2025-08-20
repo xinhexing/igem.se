@@ -221,8 +221,8 @@ body {
 }
 .carousel-cell {
     width: 80%; height: 100%;
-    padding: 0 1rem;
     align-items: center; justify-content: center;
+    /* padding: 0 1rem; */
     /* margin-right: 1rem; */ /*? Gap between cells */
     background-color: var(--bg_light);
 
