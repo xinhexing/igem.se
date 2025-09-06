@@ -1,9 +1,3 @@
-// Reload reset page position
-
-window.addEventListener('load', () => {
-    window.scrollTo(0, 0);
-});
-
 document.addEventListener('DOMContentLoaded', function() {
 
     function loadJSON(url, callback) {
