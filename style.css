@@ -73,6 +73,7 @@ body {
     box-sizing: border-box; padding: 1rem calc((100% - var(--content_width))/2);
     color: var(--white);
     background-color: var(--black);
+    margin-bottom: 5vh; /* TODO */
 }
 .header h1 {font-weight: 300;}
 
@@ -238,11 +239,15 @@ body {
     a {width: 100%; height: 100%; position: absolute}
 }
 
+#gallery-carousel img {
+    width: 100%; height: auto; object-fit: scale-down
+}
+
 #team-logo-carousel {
     max-height: 10rem;
     .carousel-cell {background-color: transparent;}
     img {object-fit: contain; max-width: 10rem;}
-}   
+}
 
 
 /* Screen */
